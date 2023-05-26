@@ -1,7 +1,7 @@
-# 自搭翻墙梯子
+# v-ladder自搭翻墙梯子
 
 ## 运行方式
-- 在replit上云部署 [![replit](https://img.shields.io/badge/Open%20in-Replit-1A1E27?logo=replit)](https://replit.com/@SifeCleak/VPN)（注意：近期出现`res.end`截取bug，可能是网络调用大replit进行了限制，如要使用你可以fork）
+- 在replit上云部署 [![replit](https://img.shields.io/badge/Open%20in-Replit-1A1E27?logo=replit)](https://replit.com/@SifeCleak/VPN)
 
 - 在国外服务器上部署index.js
 
