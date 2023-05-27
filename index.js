@@ -40,7 +40,12 @@ main=async function(uri,req,res){
   var head="";
   var lock=1;
   return await fetch(uri,{method:req.method,headers:hhf,body:req.body}).then(r=>{
-    var fh={"content-type":[...r.headers.entries()].reduce((obj, [key, value]) => (obj[key] = value, obj), {})["content-type"]}
+    var headall=[...r.headers.entries()].reduce((obj, [key, value]) => (obj[key] = value, obj), {});
+    if(headall["content-type"]){
+      var fh={"content-type":[...r.headers.entries()].reduce((obj, [key, value]) => (obj[key] = value, obj), {})["content-type"]}
+    }else{
+      fh={};
+    }
     //var fh=Object.fromEntries([...r.headers.entries()])
     if(req.url.search("baidu.com")!=-1){console.log([...r.headers.entries()].reduce((obj, [key, value]) => (obj[key] = value, obj), {}))}
         res.writeHead(r.status,fh)
