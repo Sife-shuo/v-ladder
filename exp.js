@@ -3,7 +3,7 @@ const app = express();
 const http=require('http')
 const server=http.createServer(app)
 const {Buffer}=require('buffer');
-c="https://vpn.sifecleak.repl.co/"
+c="https://vpnexp.sifecleak.repl.co/"
 app.use(function(req,res,next){
     res.setHeader("Access-Control-Allow-Origin","*")
     if(req.method === 'GET'){next()}
@@ -61,12 +61,7 @@ main=async function(uri,req,res){
     }
     }).then(k=>{
     if(lock){
-        if(head&&head.includes("text/html")){
-        res.end(dhtml+replac(k,uri))
-        }
-        else{
         res.end(Buffer.from(k))
-        }
     }
     })
 }
