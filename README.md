@@ -1,4 +1,4 @@
-# v-ladder自搭翻墙梯子
+# v-ladder免费翻墙梯子
 
 ## 运行方式
 - 在replit上云部署 [![replit](https://img.shields.io/badge/Open%20in-Replit-1A1E27?logo=replit)](https://replit.com/@SifeCleak/VPN)
